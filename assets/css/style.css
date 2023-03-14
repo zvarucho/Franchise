@@ -1105,6 +1105,52 @@ body {
 .login__input{
   
 }
+/*FORMS*/
+.reg__form {
+    margin-top: 150px;
+}
+.reg__form h2{
+    font-size: 26px;
+    text-align: center;
+    margin: 30px 0;
+}
+.reg__form label {
+    font-size: 18px;
+}
+.reg__form input{
+    height: 3.3rem;
+}
+.reg__form a {
+    font-size: 18px;
+    padding: 20px 40px;
+    transition: all .3s;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.log__actions {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+.reg__actions {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.mb-3 .header-main__button {
+    font-size: 16px;
+    padding: 20px 40px;
+}
+.reg__form a:hover {
+    margin-left: 5px;
+    transition: all .3s;
+}
+.form-text {
+    color: #0fbdd1;
+}
+.button-log {
+   
+}
 /*
     Footer
  */

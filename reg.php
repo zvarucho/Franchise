@@ -1,3 +1,4 @@
+<?php include("path.php"); ?>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -47,7 +48,7 @@
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4 reg__actions">
                 <button type="button" class="header-main__button button">Реєстрація</button>
-                <a href="log.html">Ввійти</a>
+                <a href="<?php echo BASE_URL . 'log.php'?>">Ввійти</a>
             </div>
         </form>
     </div>

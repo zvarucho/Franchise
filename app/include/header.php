@@ -1,13 +1,13 @@
 <header class="header">
             <div class="header__container">
-                <a href="/" class="header__logo">
+                <a href="<?php echo BASE_URL ?>" class="header__logo">
                     <img src="assets/img/logo4.svg" alt="logo">
                 </a>
                 <nav class="header__menu menu">
                     <div class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#main" class="menu__link">Головна</a>
+                                <a href="<?php echo BASE_URL ?>" class="menu__link">Головна</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#main" class="menu__link">Про автора</a>
@@ -27,7 +27,7 @@
                 </a>
                 <a href="#pricing" class="header__button button">Придбати</a>
                 <div class="dropdown">
-                    <a href="log.html" class="dropdown__account">
+                    <a href="<?php echo BASE_URL . 'log.php'?>" class="dropdown__account">
                         <img class="account-img" src="assets/img/account-white.svg" alt="login">
                         <button class="dropbtn">Кабінет</button>
                     </a>

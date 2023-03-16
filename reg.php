@@ -47,7 +47,7 @@
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4 reg__actions">
                 <button type="button" class="header-main__button button">Реєстрація</button>
-                <a href="log.html">Ввійти</a>
+                <a href="log.php">Ввійти</a>
             </div>
         </form>
     </div>

@@ -27,7 +27,7 @@
                 </a>
                 <a href="#pricing" class="header__button button">Придбати</a>
                 <div class="dropdown">
-                    <a href="log.html" class="dropdown__account">
+                    <a href="../../log.php" class="dropdown__account">
                         <img class="account-img" src="assets/img/account-white.svg" alt="login">
                         <button class="dropbtn">Кабінет</button>
                     </a>

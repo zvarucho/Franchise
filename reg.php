@@ -1,4 +1,7 @@
-<?php include("path.php"); ?>
+<?php
+    include "path.php";
+    include "app/controllers/users.php";
+?>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -23,31 +26,36 @@
     <!-- END HEADER -->
     <!-- FORM -->
     <div class="reg__container reg__form">
-        <form class="row justify-content-center" method="post" action="reg.html">
+        <form class="row justify-content-center" method="post" action="reg.php">
             <h2>Форма реєстрації</h2>
+            <div class="mb-3 col-12 col-md-4 msg">
+                <p class="successful__text"><?=$successfulMsg?></p>
+                <p class="err__text"><?=$errMsg?></p>
+            </div>
+            <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
                 <label for="formGroupExampleInput" class="form-label">Ваш логін</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введіть ваш логін...">
+                <input name="login" value="<?=$login?>" type="text" class="form-control" id="formGroupExampleInput" placeholder="Введіть ваш логін...">
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введіть ваш email...">
+                <input name="mail" value="<?=$email?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введіть ваш email...">
                 <div id="emailHelp" class="form-text">Ваша email адреса не буде використана для спама!</div>
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
                 <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введіть ваш пароль...">
+                <input name="pass-first" type="password" class="form-control" id="exampleInputPassword1" placeholder="Введіть ваш пароль...">
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
                 <label for="exampleInputPassword2" class="form-label">Повторіть пароль</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Повторіть ваш пароль...">
+                <input name="pass-second" type="password" class="form-control" id="exampleInputPassword2" placeholder="Повторіть ваш пароль...">
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4 reg__actions">
-                <button type="button" class="header-main__button button">Реєстрація</button>
+                <button type="submit" class="header-main__button button">Реєстрація</button>
                 <a href="<?php echo BASE_URL . 'log.php'?>">Ввійти</a>
             </div>
         </form>

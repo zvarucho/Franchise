@@ -55,7 +55,7 @@
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4 reg__actions">
-                <button type="submit" class="header-main__button button">Реєстрація</button>
+                <button type="submit" name="button-reg" class="header-main__button button">Реєстрація</button>
                 <a href="<?php echo BASE_URL . 'log.php'?>">Ввійти</a>
             </div>
         </form>

@@ -27,14 +27,26 @@
                 </a>
                 <a href="#pricing" class="header__button button">Придбати</a>
                 <div class="dropdown">
-                    <a href="<?php echo BASE_URL . 'log.php'?>" class="dropdown__account">
-                        <img class="account-img" src="assets/img/account-white.svg" alt="login">
-                        <button class="dropbtn">Кабінет</button>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#">Адмін панель</a>
-                        <a href="#">Вихід</a>
-                    </div>
+                    <?php if (isset($_SESSION['id'])): ?>
+                        <a href="<?php echo BASE_URL . 'log.php'?>" class="dropdown__account">
+                            <img class="account-img" src="assets/img/account-white.svg" alt="login">
+                            <button class="dropbtn"><?php echo $_SESSION['login']; ?></button>
+                        </a>
+                        <div class="dropdown-content">
+                            <?php if ($_SESSION['admin']): ?>
+                                <a href="#">Адмін панель</a>
+                            <?php endif; ?>
+                            <a href="#">Вихід</a>
+                        </div>
+                    <?php else: ?>
+                        <a href="<?php echo BASE_URL . "log.php"; ?>" class="dropdown__account">
+                            <img class="account-img" src="assets/img/account-white.svg" alt="login">
+                            <button class="dropbtn">Ввійти</button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="<?php echo BASE_URL . "reg.php"; ?>">Реєстрація</a>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <a href="" class="header__language">en</a>  
                 <!-- <a href="" class="account">

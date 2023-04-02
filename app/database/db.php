@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require 'connect.php';
 
 function tt($value){
@@ -23,10 +24,10 @@ function selectAll($table, $params = []){
     if(!empty($params)){
         $i = 0;
         foreach ($params as $key => $value){
-            if (!is_numeric($value)){
+            if(!is_numeric($value)){
                 $value = "'".$value."'";
             }
-            if ($i === 0){
+            if($i === 0){
                 $sql = $sql . " WHERE $key = $value";
             }else{
                 $sql = $sql . " AND $key = $value";

@@ -1,4 +1,7 @@
-<?php include("path.php"); ?>
+<?php 
+    include "path.php";
+    include "app/controllers/users.php";
+?>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -23,21 +26,26 @@
     <!-- END HEADER -->
     <!-- FORM -->
     <div class="log__container reg__form">
-        <form class="row justify-content-center" method="post" action="log.html">
+        <form class="row justify-content-center" method="post" action="log.php">
             <h2 class="col-12">Авторизація</h2>
+            <div class="mb-3 col-12 col-md-4 msg">
+                <p class="successful__text"><?=$successfulMsg?></p>
+                <p class="err__text"><?=$errMsg?></p>
+            </div>
+            <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
-                <label for="formGroupExampleInput" class="form-label">Логін</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введіть ваш логін...">
+                <label for="formGroupExampleInput" class="form-label">Ваша пошта</label>
+                <input name="mail" value="<?=$email?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введіть ваш email...">
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
                 <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введіть ваш пароль...">
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Введіть ваш пароль...">
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4 log__actions">
-                <button type="button" class="header-main__button button">Ввійти</button>
-                <a href="<?php echo BASE_URL . 'reg.php'?>" class="button-log">Зареєструватися</a>
+                <button type="submit" name="button-log" class="header-main__button button">Ввійти</button>
+                <a href="<?php echo BASE_URL . 'reg.php'?>">Зареєструватися</a>
             </div>
         </form>
     </div>

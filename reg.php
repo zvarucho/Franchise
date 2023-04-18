@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>My blog</title>
+    <title>Реєстрація</title>
 </head>
 <body>
     <?php include("app/include/header.php"); ?>
@@ -30,7 +30,7 @@
             <h2>Форма реєстрації</h2>
             <div class="mb-3 col-12 col-md-4 msg">
                 <p class="successful__text"><?=$successfulMsg?></p>
-                <p class="err__text"><?=$errMsg?></p>
+                <p class="err__text"><?php include "app/helps/errorInfo.php"; ?></p>
             </div>
             <div class="w-100"></div>
             <div class="mb-3 col-12 col-md-4">
@@ -63,7 +63,7 @@
     <!-- END FORM -->
 
     <!-- footer -->
-    <?php include("app/include/footer.php"); ?>;
+    <?php include("app/include/footer.php"); ?>
     <!-- // footer -->
 
 

@@ -401,7 +401,7 @@
                 </div>
             </section>
         </main>
-        <?php include("app/include/footer.php"); ?>;
+        <?php include("app/include/footer.php"); ?>
         <!-- <footer class="footer">
             <div class="footer__main main-footer">
                 <div class="main-footer__container">

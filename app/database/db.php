@@ -149,3 +149,4 @@ function delete($table, $id){
 
 }
 // delete('users', 4);
+

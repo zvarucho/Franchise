@@ -1,7 +1,8 @@
 <?php
-
-    include_once SITE_ROOT . "/app/controllers/commentaries.php";
+    include "path.php"; 
+    include "app/controllers/commentaries.php";
 ?>
+<link rel="stylesheet" href="assets/css/style.css">
 <footer id="footer" class="footer">
     <div class="footer__main main-footer">
         <div class="main-footer__container">
@@ -73,10 +74,10 @@
             <div class="main-footer__column">
                 <div class="main-footer__label">Зв'язатися</div>
                 <div class="main-footer__text text">Залиши свій відгук або пораду щодо продукту.</div>
-                <div class="mb-3 col-12 col-md-4 msg">
-                        <?php include_once SITE_ROOT . "/app/helps/errorInfo.php"; ?>
-                    </div>
                 <form action="#" method="post" class="login">
+                    <div class="mb-3 col-12 col-md-4 msg">
+                        <?php include "../helps/errorInfo.php"; ?>
+                    </div>
                     <div class="login__div">
                         <input type="hidden" name="page" value="<?=$page; ?>">
                         <input name="email" type="email" placeholder="Введіть свій email" required class="login__input"></input>

@@ -34,7 +34,7 @@
                 </a>
                 <div class="dropdown-content">
                     <?php if ($_SESSION['admin']): ?>
-                        <a href="#">Адмін панель</a>
+                        <a href="<?php echo BASE_URL . "../../admin/posts/index.php"; ?>">Адмін панель</a>
                     <?php endif; ?>
                     <a href="<?php echo BASE_URL . "logout.php"; ?>">Вихід</a>
                 </div>

@@ -1,5 +1,4 @@
 <?php
-
     include_once SITE_ROOT . "/app/controllers/commentaries.php";
 ?>
 <footer id="footer" class="footer">

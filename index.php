@@ -335,7 +335,7 @@
                         <div class="start__column">
                             <div class="start__actions">
                                 <a href="#pricing" class="start__button button">Придбати</a>
-                                <a href="quiz/quiz.html" target="_blank" class="start__button button-dark">Пройти тест</a>
+                                <a href="app/quiz/quiz.php" target="_blank" class="start__button button-dark">Пройти тест</a>
                             </div>
                         </div>
                     </div>

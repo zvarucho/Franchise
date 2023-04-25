@@ -4,6 +4,22 @@ include_once SITE_ROOT . "/app/database/db.php";
 $errMsg = [];
 $status = 0;
 $commentsForAdm = selectAll('comment');
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['goQuiz'])){
+    $names = trim($_POST['names']);
+
+    if($names === ''){
+        array_push($errMsg, "Не всі поля заповнені!");
+    }elseif (mb_strlen($names, 'UTF8') < 3){
+        array_push($errMsg, "Ім'я повинно бути більше 3 символів");
+    }else{
+            $quiz = [
+                'names' => $names
+            ];
+            $quiz = insert('quiz', $quiz);
+        }
+}else{
+    $names = '';
+}
 // Код для форми створення коментаря
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['goComment'])){
     $email = trim($_POST['email']);

@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +15,7 @@
       <div id="highScores" class="flex-center flex-column">
         <h1 id="finalScore">Результати</h1>
         <ul id="highScoresList"></ul>
-        <a class="btn" href="quiz.html">На Головну</a>
+        <a class="btn" href="quiz.php">На Головну</a>
       </div>
     </div>
     <script src="highscores.js"></script>

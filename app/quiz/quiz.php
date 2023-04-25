@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,8 +13,8 @@
     <div class="container">
       <div id="home" class="flex-center flex-column">
         <h1>Чи готовий я придбати Франшизу?</h1>
-        <a class="btn" href="game.html">Розпочати</a>
-        <a class="btn" href="highscores.html">Результати</a>
+        <a class="btn" href="game.php">Розпочати</a>
+        <a class="btn" href="highscores.php">Результати</a>
         <a class="btn" href="/">На Головну</a>
       </div>
     </div>
